@@ -1,8 +1,49 @@
+@font-face {
+    font-family: SF-Regular;
+    src: url(San-Francisco/SFUIDisplay-Regular.otf);
+  }
+
+@font-face {
+    font-family: SF-Bold;
+    src: url(San-Francisco/SFUIDisplay-Bold.ttf);
+  }
+
+@font-face {
+    font-family: SF-Thin;
+    src: url(San-Francisco/SFUIDisplay-Thin.otf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
 body{
     width: 100%;
     height: 100%;
     margin: 0;
+    background-image: url(img/wallpaperflare.com_wallpaper.jpg); 
+    background-size: 100vw 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: SF-Regular;
+}
+
+.panel{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    border-radius: 25px;
+    gap: 20px;
 }
 
 img{
@@ -12,25 +53,53 @@ img{
 .nav{
     flex: 1;
     display: grid;
-    grid-template: 20% 50% 30% / 100%;
+    grid-template: 10% 50% 30% / 100%;
     gap: 20px;
-    border: 1px black solid;
+    padding: 2vh 3vh;
+    border-radius: 25px;
+    background-color: #00000050;
+    backdrop-filter: blur(10px);
 }
+
 
 .logo{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+}
+
+.logo i{
+    font-size: 1.5vw;
+}
+
+.mainTabs{
+    display: flex;
+    align-items: center;
 }
 
 .mainTabs ul, .helpTabs ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .mainTabs li, .helpTabs li{
     display: flex;
+    font-family: SF-Bold;
+    font-size: 0.9vw;
+    align-items: center;
+    gap: 20px;
+}
+
+.helpTabs{
+    display: flex;
+    align-items: center;
 }
 
 .content{
-    flex: 3;
+    flex: 6;
     border: 1px black solid;
     display: grid;
     grid-template: 10% 15% 75% / 100%;
