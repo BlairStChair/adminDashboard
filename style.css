@@ -90,7 +90,7 @@ img{
 .mainTabs li, .helpTabs li{
     display: flex;
     font-family: SF-Bold;
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     align-items: center;
     gap: 20px;
     border-radius: 10px;
@@ -153,11 +153,16 @@ img{
     text-align: center;
     font-family: SF-Bold;
     font-size: 2.3vh;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#searchBarInput:hover{
+    background: rgba(255,255,255,0.5);
 }
 
 .profileSummary{
     font-family: SF-Bold;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -186,8 +191,8 @@ img{
 }
 
 .welcome{
-    flex: 1.5;
-    font-size: 1vw;
+    flex: 2;
+    font-size: 1.2vw;
 }
 
 #userName{
@@ -207,7 +212,7 @@ img{
     border: none;
     color: white;
     padding: 1vh 1vw;
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-family: SF-Bold;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -281,10 +286,6 @@ img{
     background-color: #00000095;
     text-decoration: none;
     
-}
-
-.projectBox .title a:hover{
-
 }
 
 .projectBox .projectText{
